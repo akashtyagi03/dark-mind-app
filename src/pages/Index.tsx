@@ -52,7 +52,7 @@ const Index = () => {
       const data = await response.json();
       const assistantMessage: Message = {
         role: "assistant",
-        content: data.response || data.message || "I received your message.",
+        content: data.output || data.response || data.message || "I received your message.",
       };
 
       setMessages((prev) => [...prev, assistantMessage]);
