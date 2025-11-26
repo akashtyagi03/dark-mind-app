@@ -9,7 +9,7 @@ interface Message {
   content: string;
 }
 
-const WEBHOOK_URL = "https://possible-dark-03.app.n8n.cloud/webhook-test/mychatApp";
+const WEBHOOK_URL = "http://localhost:5678/webhook-test/mychatapp";
 
 const Index = () => {
   const [messages, setMessages] = useState<Message[]>([
